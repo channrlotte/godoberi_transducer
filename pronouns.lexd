@@ -1,18 +1,19 @@
 PATTERNS
 PronounAbs ([<nom>:] | [<erg>:] | (LocMarker DirMarker)) [<emph>:да]?
-PronounObl ((([<m><sg>:в] | [<f><sg>:й] | [<n><sg>:б] | [<an><pl>:б] | [<inan><pl>:р]) [<gen>:]) | CaseMarker[-erg,-gen]) (LocMarker DirMarker)? [<emph>:да]?
+PronounObl (((ClassMarker[m] | ClassMarker[f] | ClassMarker[n] | [<an><pl>:б] | [<inan><pl>:р]) [<gen>:]) | CaseMarker[-erg,-gen]) (LocMarker DirMarker)? [<emph>:да]?
 PronounObl LocMarker DirMarker [<emph>:да]?
 
 (([он:жи] ClassMarker) | [он<an><pl>:жал]) [<nom>:] [<emph>:да]?
 [он:ин] ([<m><sg><erg>:що] | (([<f>:] | [<n>:]) [<sg><erg>:лълъе]) | (([<in>:] | [<inan>:]) [<pl><erg>:до])) (LocMarker DirMarker)? [<emph>:да]?
 [он:ин] (OblMarker[m] | (([<an>:] | [<inan>:]) [<pl>:ду])) [<gen>:] [:б]? (LocMarker DirMarker)? [<emph>:да]?
 [он:ин] (OblMarker[f] | OblMarker[n]) CaseMarker[gen] (LocMarker DirMarker)? [<emph>:да]?
+[он:ин] OblMarker CaseMarker[dat] (LocMarker DirMarker)?
 [он:ин] OblMarker [<dat><emph>:тта]
 [он:ин] OblMarker CaseMarker[dat] LocMarker DirMarker [<emph>:да]
 [он:ин] OblMarker CaseMarker[aff] (LocMarker DirMarker)? [<emph>:да]?
 [он:ин] OblMarker LocMarker DirMarker [<emph>:да]?
 
-((DemPronoun[com] ClassMarker) | (DemPronoun[m] ClassMarker[m]) | (DemPronoun[f] ClassMarker[f]) | (DemPronoun[n] ClassMarker[n]) | (DemPronoun[pl] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р]))) [<nom>:]
+((DemPronoun[com] (ClassMarker | [<an><pl>:б] | [<inan><pl>:р])) | (DemPronoun[m] ClassMarker[m]) | (DemPronoun[f] ClassMarker[f]) | (DemPronoun[n] ClassMarker[n]) | (DemPronoun[pl] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р]))) [<nom>:]
 DemPronoun[com] (([<m>:щ] | [<f>:т] | [<n>:т]) [<sg><erg>:ти]) | ((OblMarker[hpl] | OblMarker[npl]) [<erg>:ди]) (LocMarker DirMarker)?
 DemPronoun[com] (OblMarker[m] | OblMarker[hpl]) [<gen>:] [:б]? (LocMarker DirMarker)?
 DemPronoun[com] (OblMarker[f] | OblMarker[n] | OblMarker[npl]) CaseMarker[gen] (LocMarker DirMarker)?
