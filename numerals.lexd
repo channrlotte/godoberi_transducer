@@ -1,0 +1,93 @@
+PATTERNS
+NumeralRoot[one] (ClassMarker | (([<m>:л] | [<f>:л] | [<n>:л]) [<coll>:ла]))
+NumeralRoot[one] Declension
+NumeralRoot[-one] [<card>:да] [<coll>:ла]? Declension?
+(NumeralRoot[ten] | NumeralRoot[twenty]) [<plus>:лъи]
+Tens (([<coll>:ла]? Declension?) | [<plus>:лъи])
+(Hundreds | Thousands) (([<card>:да] [<coll>:ла]? Declension?) | [<plus>:лъи])
+Distributive
+(NumeralRoot | Tens | Hundreds | Thousands) [<ord>:лъи] (([<and>:ла] [<attr>:ссу]?) | ([<attr>:ссу] [<and>:ла]?))? Declension?
+Multiplicative [<mult>:цIи] [<card>:да]
+
+PATTERN Tens
+NumeralRoot[-one,-two,-ten,-twenty] [<10>:цIали]
+
+PATTERN Hundreds
+NumeralRoot[-one,-ten,-twenty]? [<100>:бешену]
+
+PATTERN Thousands
+(NumeralRoot[-one] | Tens | Hundreds)? [<1000>:азару]
+
+PATTERN Distributive
+[<distr>:] :NumeralRoot[one] NumeralRoot[one] ClassMarker
+[<distr>:] :NumeralRoot[one] NumeralRoot[one] Declension
+[<distr>:] :NumeralRoot[-one,-twenty] NumeralRoot[-one] [<card>:да] Declension?
+[<distr>:кIа] NumeralRoot[twenty] [<card>:да] Declension?
+[<distr>:] :NumeralRoot[-one,-two,-ten,-twenty] NumeralRoot[-one,-two,-ten,-twenty] [<10>:цIали] Declension?
+NumeralRoot[-one,-ten,-twenty]? [<distr>:беше] [<100>:бешену] [<card>:да] Declension?
+(NumeralRoot[-one] | Tens | Hundreds)? [<distr>:аза] [<1000>:азару] [<card>:да] Declension?
+
+PATTERN Multiplicative
+NumeralRoot[-one,-two,-three,-four] | [<2>:кIаᴴ] | [<3>:лъаб] | [<4>:буур]
+Tens
+NumeralRoot[-one,-ten,-twenty]? [<100>:бешен]
+(NumeralRoot[-one] | Tens | Hundreds)? [<1000>:азар]
+
+PATTERN Declension
+([<m>:щ] | [<f>:т] | [<n>:т]) [<erg>:ти]
+(OblMarker[hpl] | OblMarker[npl]) CaseMarker[erg]
+(OblMarker[m] | OblMarker[hpl]) [<gen>:] [:б]?
+(OblMarker[f] | OblMarker[n] | OblMarker[npl]) CaseMarker[gen]
+OblMarker (CaseMarker[dat] | CaseMarker[aff])
+OblMarker LocMarker DirMarker
+
+LEXICON NumeralRoot
+<1>:це[one]
+<2>:кIе[two]
+<3>:лъабу[three]
+<4>:буу[four]
+<5>:инщтту
+<6>:инлIи
+<7>:гьакьу
+<8>:бикьи
+<9>:гьачIи
+<10>:гьацIа[ten]
+<2><10>:кIацIа[twenty]
+
+LEXICON ClassMarker
+<m>:в
+<f>:й
+<n>:б
+<hpl>:бе
+<npl>:ре
+
+LEXICON OblMarker
+<m>:щу[m]
+<f>:лълъи[f]
+<n>:лълъи[n]
+<hpl>:рду[hpl]
+<npl>:рди[npl]
+
+LEXICON LocMarker
+<sup>:ла
+<cont>:чIу[cont]
+<in>:о
+<inter>:лIи
+<apud>:ха
+<ad>:хъи
+<place>:алда
+
+LEXICON DirMarker
+<lat>:
+<elat>:ру
+<allat>:ху[al]
+<translat>:руху[trans]
+<translat>:риди[trans]
+<translat>:руди[trans]
+<translat>:рикьи[trans]
+
+LEXICON CaseMarker
+<erg>:ди[erg]
+<gen>:лIи[gen]
+<dat>:лъи[dat]
+<aff>:ра[aff]

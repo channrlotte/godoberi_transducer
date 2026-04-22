@@ -1,0 +1,88 @@
+PATTERNS
+PronounAbs ([<nom>:] | [<erg>:] | (LocMarker DirMarker)) [<emph>:да]?
+PronounObl ((([<m><sg>:в] | [<f><sg>:й] | [<n><sg>:б] | [<an><pl>:б] | [<inan><pl>:р]) [<gen>:]) | CaseMarker[-erg,-gen]) (LocMarker DirMarker)? [<emph>:да]?
+PronounObl LocMarker DirMarker [<emph>:да]?
+
+(([он:жи] ClassMarker) | [он<an><pl>:жал]) [<nom>:] [<emph>:да]?
+[он:ин] ([<m><sg><erg>:що] | (([<f>:] | [<n>:]) [<sg><erg>:лълъе]) | (([<in>:] | [<inan>:]) [<pl><erg>:до])) (LocMarker DirMarker)? [<emph>:да]?
+[он:ин] (OblMarker[m] | (([<an>:] | [<inan>:]) [<pl>:ду])) [<gen>:] [:б]? (LocMarker DirMarker)? [<emph>:да]?
+[он:ин] (OblMarker[f] | OblMarker[n]) CaseMarker[gen] (LocMarker DirMarker)? [<emph>:да]?
+[он:ин] OblMarker [<dat><emph>:тта]
+[он:ин] OblMarker CaseMarker[dat] LocMarker DirMarker [<emph>:да]
+[он:ин] OblMarker CaseMarker[aff] (LocMarker DirMarker)? [<emph>:да]?
+[он:ин] OblMarker LocMarker DirMarker [<emph>:да]?
+
+((DemPronoun[com] ClassMarker) | (DemPronoun[m] ClassMarker[m]) | (DemPronoun[f] ClassMarker[f]) | (DemPronoun[n] ClassMarker[n]) | (DemPronoun[pl] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р]))) [<nom>:]
+DemPronoun[com] (([<m>:щ] | [<f>:т] | [<n>:т]) [<sg><erg>:ти]) | ((OblMarker[hpl] | OblMarker[npl]) [<erg>:ди]) (LocMarker DirMarker)?
+DemPronoun[com] (OblMarker[m] | OblMarker[hpl]) [<gen>:] [:б]? (LocMarker DirMarker)?
+DemPronoun[com] (OblMarker[f] | OblMarker[n] | OblMarker[npl]) CaseMarker[gen] (LocMarker DirMarker)?
+DemPronoun[com] OblMarker CaseMarker[-erg,-gen] (LocMarker DirMarker)?
+DemPronoun[m] ([<m><sg><erg>:щти] | (OblMarker[m] (([<gen>:] [:б]?) | CaseMarker[-erg,-gen]))) (LocMarker DirMarker)?
+DemPronoun[f] ([<f><sg><erg>:тти] | (OblMarker[f] CaseMarker[-erg])) (LocMarker DirMarker)?
+DemPronoun[n] ([<n><sg><erg>:тти] | (OblMarker[n] CaseMarker[-erg])) (LocMarker DirMarker)?
+DemPronoun[pl] OblMarker[hpl] (([<gen>:] [:б]?) | CaseMarker[-gen]) (LocMarker DirMarker)?
+DemPronoun[pl] OblMarker[npl] CaseMarker (LocMarker DirMarker)?
+((DemPronoun[com] OblMarker) | (DemPronoun[m] OblMarker[m]) | (DemPronoun[f] OblMarker[f]) | (DemPronoun[n] OblMarker[n]) | (DemPronoun[pl] OblMarker[pl])) LocMarker DirMarker
+
+LEXICON PronounAbs
+я:ден
+ты:мин
+мы<incl>:ище
+мы<excl>:илIе
+вы:битте
+
+LEXICON PronounObl
+я:ди
+ты:ду
+мы<incl>:ищи
+мы<excl>:илIи
+вы:битти
+
+LEXICON DemPronoun
+этот<speak>:гьа[com]
+этот<list>:гьу[com]
+тот<speak>:гьадо[m]
+тот<speak>:гьаде[f]
+тот<speak>:гьада[n]
+тот<speak>:гьада[pl]
+тот<list>:гьудо[m]
+тот<list>:гьуде[f]
+тот<list>:гьуда[n]
+тот<list>:гьуда[pl]
+<infer>:гье[com]
+<anaph>:гьо[com]
+
+LEXICON ClassMarker
+<m><sg>:в[m]
+<f><sg>:й[f]
+<n><sg>:б[n]
+<an><pl>:бе[pl]
+<inan><pl>:ре[pl]
+
+LEXICON OblMarker
+<m><sg>:щу[m]
+<f><sg>:лълъи[f]
+<n><sg>:лълъи[n]
+<an><pl>:рду[hpl]
+<inan><pl>:рди[npl]
+
+LEXICON LocMarker
+<cont>:чIу[cont]
+<apud>:ха
+<ad>:хъи
+
+LEXICON DirMarker
+<ess>:
+<lat>:
+<elat>:ру
+<allat>:ху[al]
+<translat>:руху[trans]
+<translat>:риди[trans]
+<translat>:руди[trans]
+<translat>:рикьи[trans]
+
+LEXICON CaseMarker
+<erg>:ди[erg]
+<gen>:лIи[gen]
+<dat>:лъи[dat]
+<aff>:ра[aff]
