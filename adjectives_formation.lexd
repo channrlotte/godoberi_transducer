@@ -1,0 +1,67 @@
+PATTERNS
+Adjective
+((AdjectiveOblC [>:>] [<obl>:а]) | AdjectiveOblV) [>:>] (DeclensionM | DeclensionF | DeclensionN | DeclensionHPL | DeclensionNPL)
+
+(AdjectiveM | AdjectiveF | AdjectiveN | AdjectiveHPL | AdjectiveNPL)
+AdjectiveOblM [<obl>>:>] DeclensionM
+AdjectiveOblF [<obl>>:>]DeclensionF
+AdjectiveOblN [<obl>>:>] DeclensionN
+AdjectiveOblHPL [<obl>>:>] DeclensionHPL
+AdjectiveOblNPL [<obl>>:>] DeclensionNPL
+
+PATTERN DeclensionM
+[<m>:щ] [>:>] [<erg>:ти]
+OblMarker[m] [<gen>:]
+OblMarker[m] [>:>] [<gen>:] [:б]
+OblMarker[m] [>:>] (CaseMarker[-erg,-gen] | SpatialCase)
+
+PATTERN DeclensionF
+[<f>:т] [>:>] [<erg>:ти]
+OblMarker[f] [>:>] (CaseMarker[-erg] | SpatialCase)
+
+PATTERN DeclensionN
+[<n>:т] [>:>] [<erg>:ти]
+OblMarker[n] [>:>] (CaseMarker[-erg] | SpatialCase)
+
+PATTERN DeclensionHPL
+OblMarker[hpl] [<gen>:]
+OblMarker[hpl] [>:>] [<gen>:] [:б]
+OblMarker[hpl] [>:>] (CaseMarker[-gen] | SpatialCase)
+
+PATTERN DeclensionNPL
+OblMarker[npl] [>:>] (CaseMarker | SpatialCase)
+
+PATTERN SpatialCase
+LocMarker [<lat>:]
+LocMarker[-cont] [>:>] DirMarker
+LocMarker[cont] [>:>] DirMarker[-al,-trans]
+
+LEXICON OblMarker
+<m>:щу[m]
+<f>:лълъи[f]
+<n>:лълъи[n]
+<h>><pl>:р>ду[hpl]
+<n>><pl>:р>ди[npl]
+
+LEXICON LocMarker
+<sup>:ла
+<cont>:чIу[cont]
+<in>:о
+<inter>:лIи
+<apud>:ха
+<ad>:хъи
+<place>:алда
+
+LEXICON DirMarker
+<elat>:ру
+<allat>:ху[al]
+<translat>:руху[trans]
+<translat>:риди[trans]
+<translat>:руди[trans]
+<translat>:рикьи[trans]
+
+LEXICON CaseMarker
+<erg>:ди[erg]
+<gen>:лIи[gen]
+<dat>:лъи
+<aff>:ра
