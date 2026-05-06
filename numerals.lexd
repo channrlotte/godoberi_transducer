@@ -1,72 +1,76 @@
 PATTERNS
-NumeralRoot[one] (ClassMarker | (([<m>:л] | [<f>:л] | [<n>:л]) [<coll>:ла]))
-NumeralRoot[one] Declension
-NumeralRoot[-one] [<card>:да] [<coll>:ла]? Declension?
-(NumeralRoot[ten] | NumeralRoot[twenty]) [<plus>:лъи]
-Tens (([<coll>:ла]? Declension?) | [<plus>:лъи])
-(Hundreds | Thousands) (([<card>:да] [<coll>:ла]? Declension?) | [<plus>:лъи])
+Numeral[one] [>:>] (ClassMarker | (([<m>:л] | [<f>:л] | [<n>:л]) [<coll>:ла]))
+Numeral[one] [>:>] Declension
+Numeral[-one] [>:>] [<card>:да] ([>:>] [<coll>:ла])? ([>:>] Declension)?
+(Numeral[ten] | Numeral[twenty]) [>:>] [<plus>:лъи]
+Tens ((([>:>] [<coll>:ла])? ([>:>] Declension)?) | ([>:>] [<plus>:лъи]))
+(Hundreds | Thousands) [>:>] (([<card>:да] ([>:>] [<coll>:ла])? ([>:>] Declension)?) | [<plus>:лъи])
 Distributive
-(NumeralRoot | Tens | Hundreds | Thousands) [<ord>:лъи] (([<and>:ла] [<attr>:ссу]?) | ([<attr>:ссу] [<and>:ла]?))? Declension?
-Multiplicative [<mult>:цIи] [<card>:да]
+(Numeral | Tens | Hundreds | Thousands) [>:>] [<ord>:лъи] ([>:>] (([<and>:ла] ([>:>] [<attr>:ссу])?) | ([<attr>:ссу] ([>:>] [<and>:ла])?)))? ([>:>] Declension)?
+Multiplicative [>:>] [<mult>:цIи] [>:>] [<card>:да]
 
 PATTERN Tens
-NumeralRoot[-one,-two,-ten,-twenty] [<10>:цIали]
+Numeral[-one,-two,-ten,-twenty] [>:>] [гьацIа<NUM>:цIали]
 
 PATTERN Hundreds
-NumeralRoot[-one,-ten,-twenty]? [<100>:бешену]
+(Numeral[-one,-ten,-twenty] [>:>])? [бешену<NUM>:бешену]
 
 PATTERN Thousands
-(NumeralRoot[-one] | Tens | Hundreds)? [<1000>:азару]
+((Numeral[-one] | Tens | Hundreds) [>:>])? [азару<NUM>:азару]
 
 PATTERN Distributive
-[<distr>:] :NumeralRoot[one] NumeralRoot[one] ClassMarker
-[<distr>:] :NumeralRoot[one] NumeralRoot[one] Declension
-[<distr>:] :NumeralRoot[-one,-twenty] NumeralRoot[-one] [<card>:да] Declension?
-[<distr>:кIа] NumeralRoot[twenty] [<card>:да] Declension?
-[<distr>:] :NumeralRoot[-one,-two,-ten,-twenty] NumeralRoot[-one,-two,-ten,-twenty] [<10>:цIали] Declension?
-NumeralRoot[-one,-ten,-twenty]? [<distr>:беше] [<100>:бешену] [<card>:да] Declension?
-(NumeralRoot[-one] | Tens | Hundreds)? [<distr>:аза] [<1000>:азару] [<card>:да] Declension?
+[<distr>:] :Numeral[one] [>:>] Numeral[one] [>:>] (ClassMarker | Declension)
+[<distr>:] :Numeral[-one,-twenty] [>:>] Numeral[-one,-twenty] [>:>] [<card>:да] ([>:>] Declension)?
+[<distr>:] :Numeral[-one,-two,-ten,-twenty] [>:>] Numeral[-one,-two,-ten,-twenty] [>:>] [гьацIа<NUM>:цIали] ([>:>] Declension)?
+[<distr>:кIа] [>:>] Numeral[twenty] [>:>] [<card>:да] ([>:>] Declension)?
+(Numeral[-one,-ten,-twenty] [>:>])? [<distr>:беше] [>:>] [бешену<NUM>:бешену] [>:>] [<card>:да] ([>:>] Declension)?
+((Numeral[-one] | Tens | Hundreds) [>:>])? [<distr>:аза] [>:>] [азару<NUM>:азару] [>:>] [<card>:да] ([>:>] Declension)?
 
 PATTERN Multiplicative
-NumeralRoot[-one,-two,-three,-four] | [<2>:кIаᴴ] | [<3>:лъаб] | [<4>:буур]
+(Numeral[-one,-two,-three,-four] | [кIе<NUM>:кIаᴴ] | [лъабу<NUM>:лъаб] | [буу<NUM>:буур])
 Tens
-NumeralRoot[-one,-ten,-twenty]? [<100>:бешен]
-(NumeralRoot[-one] | Tens | Hundreds)? [<1000>:азар]
+(Numeral[-one,-ten,-twenty] [>:>])? [бешену<NUM>:бешен]
+((Numeral[-one] | Tens | Hundreds) [>:>])? [азару<NUM>:азар]
 
 PATTERN Declension
-([<m>:щ] | [<f>:т] | [<n>:т]) [<erg>:ти]
-(OblMarker[hpl] | OblMarker[npl]) CaseMarker[erg]
-(OblMarker[m] | OblMarker[hpl]) [<gen>:] [:б]?
-(OblMarker[f] | OblMarker[n] | OblMarker[npl]) CaseMarker[gen]
-OblMarker (CaseMarker[dat] | CaseMarker[aff])
-OblMarker LocMarker DirMarker
+([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]
+(OblMarker[hpl] | OblMarker[npl]) [>:>] CaseMarker[erg]
+(OblMarker[m] | OblMarker[hpl]) [<gen>:]
+(OblMarker[m] | OblMarker[hpl]) [>:>] [<gen>:] [:б]
+(OblMarker[f] | OblMarker[n] | OblMarker[npl]) [>:>] CaseMarker[gen]
+OblMarker [>:>] (CaseMarker[-erg,-gen] | SpatialCase)
 
-LEXICON NumeralRoot
-<1>:це[one]
-<2>:кIе[two]
-<3>:лъабу[three]
-<4>:буу[four]
-<5>:инщтту
-<6>:инлIи
-<7>:гьакьу
-<8>:бикьи
-<9>:гьачIи
-<10>:гьацIа[ten]
-<2><10>:кIацIа[twenty]
+PATTERN SpatialCase
+LocMarker [<lat>:]
+LocMarker[-cont] [>:>] DirMarker
+LocMarker[cont] [>:>] DirMarker[-al,-trans]
+
+LEXICON Numeral
+це<NUM>:це[one]
+кIе<NUM>:кIе[two]
+лъабу<NUM>:лъабу[three]
+буу<NUM>:буу[four]
+инщтту<NUM>:инщтту
+инлIи<NUM>:инлIи
+гьакьу<NUM>:гьакьу
+бикьи<NUM>:бикьи
+гьачIи<NUM>:гьачIи
+гьацIа<NUM>:гьацIа[ten]
+кIацIа<NUM>:кIацIа[twenty]
 
 LEXICON ClassMarker
 <m>:в
 <f>:й
 <n>:б
-<hpl>:бе
-<npl>:ре
+<h><pl>:бе
+<n><pl>:ре
 
 LEXICON OblMarker
 <m>:щу[m]
 <f>:лълъи[f]
 <n>:лълъи[n]
-<hpl>:рду[hpl]
-<npl>:рди[npl]
+<h>><pl>:р>ду[hpl]
+<n>>pl>:р>ди[npl]
 
 LEXICON LocMarker
 <sup>:ла
@@ -78,7 +82,6 @@ LEXICON LocMarker
 <place>:алда
 
 LEXICON DirMarker
-<lat>:
 <elat>:ру
 <allat>:ху[al]
 <translat>:руху[trans]
@@ -89,5 +92,5 @@ LEXICON DirMarker
 LEXICON CaseMarker
 <erg>:ди[erg]
 <gen>:лIи[gen]
-<dat>:лъи[dat]
-<aff>:ра[aff]
+<dat>:лъи
+<aff>:ра
