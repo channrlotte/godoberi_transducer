@@ -2,12 +2,12 @@ PATTERNS
 Adjective
 ((AdjectiveOblC [>:>] [<obl>:а]) | AdjectiveOblV) [>:>] (DeclensionM | DeclensionF | DeclensionN | DeclensionHPL | DeclensionNPL)
 
-(AdjectiveM | AdjectiveF | AdjectiveN | AdjectiveHPL | AdjectiveNPL)
-AdjectiveOblM [<obl>>:>] DeclensionM
-AdjectiveOblF [<obl>>:>]DeclensionF
-AdjectiveOblN [<obl>>:>] DeclensionN
-AdjectiveOblHPL [<obl>>:>] DeclensionHPL
-AdjectiveOblNPL [<obl>>:>] DeclensionNPL
+AdjectiveM | AdjectiveF | AdjectiveN | AdjectiveHPL | AdjectiveNPL
+AdjectiveOblM [>:>] DeclensionM
+AdjectiveOblF [>:>] DeclensionF
+AdjectiveOblN [>:>] DeclensionN
+AdjectiveOblHPL [>:>] DeclensionHPL
+AdjectiveOblNPL [>:>] DeclensionNPL
 
 PATTERN DeclensionM
 [<m>:щ] [>:>] [<erg>:ти]
@@ -24,24 +24,23 @@ PATTERN DeclensionN
 OblMarker[n] [>:>] (CaseMarker[-erg] | SpatialCase)
 
 PATTERN DeclensionHPL
-OblMarker[hpl] [<gen>:]
-OblMarker[hpl] [>:>] [<gen>:] [:б]
+OblMarker[hpl] ([<gen>:] | ([>:>] [<gen>:б]))
 OblMarker[hpl] [>:>] (CaseMarker[-gen] | SpatialCase)
 
 PATTERN DeclensionNPL
 OblMarker[npl] [>:>] (CaseMarker | SpatialCase)
 
 PATTERN SpatialCase
-LocMarker [<lat>:]
+LocMarker ([<ess>:] | [<lat>:])
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 
 LEXICON OblMarker
-<m>:щу[m]
-<f>:лълъи[f]
-<n>:лълъи[n]
-<h>><pl>:р>ду[hpl]
-<n>><pl>:р>ди[npl]
+<obl><m>:щу[m]
+<obl><f>:лълъи[f]
+<obl><n>:лълъи[n]
+<obl><h><pl>:рду[hpl]
+<obl><n><pl>:рди[npl]
 
 LEXICON LocMarker
 <sup>:ла

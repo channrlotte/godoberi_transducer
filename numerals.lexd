@@ -6,23 +6,27 @@ Numeral[-one] [>:>] [<card>:да] ([>:>] [<coll>:ла])? ([>:>] Declension)?
 Tens ((([>:>] [<coll>:ла])? ([>:>] Declension)?) | ([>:>] [<plus>:лъи]))
 (Hundreds | Thousands) [>:>] (([<card>:да] ([>:>] [<coll>:ла])? ([>:>] Declension)?) | [<plus>:лъи])
 Distributive
-(Numeral | Tens | Hundreds | Thousands) [>:>] [<ord>:лъи] ([>:>] (([<and>:ла] ([>:>] [<attr>:ссу])?) | ([<attr>:ссу] ([>:>] [<and>:ла])?)))? ([>:>] Declension)?
+([це<NUM>:це̄] | [кIе<NUM>:кIе̄]) [>:>] [<ord>:лъи] ([>:>] (([<and>:ла] ([>:>] [<attr>:ссу])?) | ([<attr>:ссу] ([>:>] [<and>:ла])?)))? ([>:>] Declension)?
+(Numeral[-one,-two] | Tens | Hundreds | Thousands) [>:>] [<ord>:лъи] ([>:>] (([<and>:ла] ([>:>] [<attr>:ссу])?) | ([<attr>:ссу] ([>:>] [<and>:ла])?)))? ([>:>] Declension)?
 Multiplicative [>:>] [<mult>:цIи] [>:>] [<card>:да]
 
 PATTERN Tens
 Numeral[-one,-two,-ten,-twenty] [>:>] [гьацIа<NUM>:цIали]
 
 PATTERN Hundreds
-(Numeral[-one,-ten,-twenty] [>:>])? [бешену<NUM>:бешену]
+(Numeral[-one,-two,-ten,-twenty] [>:>])? [бешену<NUM>:бешену]
+[кIе<NUM>:кIе̄] [>:>] [бешену<NUM>:бешену]
 
 PATTERN Thousands
-((Numeral[-one] | Tens | Hundreds) [>:>])? [азару<NUM>:азару]
+((Numeral[-one,-two] | Tens | Hundreds) [>:>])? [азару<NUM>:азару]
+[кIе<NUM>:кIе̄] [>:>] [азару<NUM>:азару]
 
 PATTERN Distributive
-[<distr>:] :Numeral[one] [>:>] Numeral[one] [>:>] (ClassMarker | Declension)
-[<distr>:] :Numeral[-one,-twenty] [>:>] Numeral[-one,-twenty] [>:>] [<card>:да] ([>:>] Declension)?
+[<distr>:це̄] [>:>] Numeral[one] [>:>] (ClassMarker | Declension)
+[кIе<NUM>:кIе̄] [>:>] Numeral[two] [>:>] [<card>:да] ([>:>] Declension)?
+[<distr>:] :Numeral[-one,-two,-twenty] [>:>] Numeral[-one,-two,-twenty] [>:>] [<card>:да] ([>:>] Declension)?
 [<distr>:] :Numeral[-one,-two,-ten,-twenty] [>:>] Numeral[-one,-two,-ten,-twenty] [>:>] [гьацIа<NUM>:цIали] ([>:>] Declension)?
-[<distr>:кIа] [>:>] Numeral[twenty] [>:>] [<card>:да] ([>:>] Declension)?
+[<distr>:кIа̄] [>:>] Numeral[twenty] [>:>] [<card>:да] ([>:>] Declension)?
 (Numeral[-one,-ten,-twenty] [>:>])? [<distr>:беше] [>:>] [бешену<NUM>:бешену] [>:>] [<card>:да] ([>:>] Declension)?
 ((Numeral[-one] | Tens | Hundreds) [>:>])? [<distr>:аза] [>:>] [азару<NUM>:азару] [>:>] [<card>:да] ([>:>] Declension)?
 
@@ -35,13 +39,12 @@ Tens
 PATTERN Declension
 ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]
 (OblMarker[hpl] | OblMarker[npl]) [>:>] CaseMarker[erg]
-(OblMarker[m] | OblMarker[hpl]) [<gen>:]
-(OblMarker[m] | OblMarker[hpl]) [>:>] [<gen>:] [:б]
+(OblMarker[m] | OblMarker[hpl]) ([<gen>:] | ([>:>] [<gen>:б]))
 (OblMarker[f] | OblMarker[n] | OblMarker[npl]) [>:>] CaseMarker[gen]
 OblMarker [>:>] (CaseMarker[-erg,-gen] | SpatialCase)
 
 PATTERN SpatialCase
-LocMarker [<lat>:]
+LocMarker ([<ess>:] | [<lat>:])
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 
@@ -56,7 +59,7 @@ LEXICON Numeral
 бикьи<NUM>:бикьи
 гьачIи<NUM>:гьачIи
 гьацIа<NUM>:гьацIа[ten]
-кIацIа<NUM>:кIацIа[twenty]
+кIе<NUM>>гьацIа<NUM>:кIа̄>цIа[twenty]
 
 LEXICON ClassMarker
 <m>:в
@@ -66,11 +69,11 @@ LEXICON ClassMarker
 <n><pl>:ре
 
 LEXICON OblMarker
-<m>:щу[m]
-<f>:лълъи[f]
-<n>:лълъи[n]
-<h>><pl>:р>ду[hpl]
-<n>>pl>:р>ди[npl]
+<obl><m>:щу[m]
+<obl><f>:лълъи[f]
+<obl><n>:лълъи[n]
+<obl><h><pl>:рду[hpl]
+<obl><n><pl>:рди[npl]
 
 LEXICON LocMarker
 <sup>:ла
