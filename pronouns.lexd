@@ -84,8 +84,8 @@ LEXICON IntPronoun
 интто<PRON>:интто[st]
 
 LEXICON DemPronoun
-гьа:гьа[com]
-гьу:гьу[com]
+гьа<PRON>:гьа[com]
+гьу<PRON>:гьу[com]
 гьадо<PRON>:гьадо[m]
 гьадо<PRON>:гьаде[f]
 гьадо<PRON>:гьада[n]
