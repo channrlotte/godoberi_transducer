@@ -32,13 +32,19 @@ IntPronoun[adj] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)?
 IntPronoun[st] ([>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])))? ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
 ((IntPronoun[adj] [>:>] OblMarker) | (IntPronoun[st] [>:>] OblMarker[n])) [>:>] SpatialCase ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
 
-DemPronoun [>:>] ClassMarker
-[бокьара<PRON>:бокьара] [>:>] (ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р])
-(DemPronoun | [бокьара<PRON>:бокьара]) [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)?
-(DemPronoun | [бокьара<PRON>:бокьара]) [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)?
-(DemPronoun | [бокьара<PRON>:бокьара]) [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)?
-(DemPronoun | [бокьара<PRON>:бокьара]) [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)?
-(DemPronoun | [бокьара<PRON>:бокьара]) [>:>] OblMarker [>:>] SpatialCase
+DemPronoun[com] [>:>] (ClassMarker | [<h><pl>:б] | [<n><pl>:р])
+((DemPronoun[m] [>:>] ClassMarker[m]) | (DemPronoun[f] [>:>] ClassMarker[f]) | (DemPronoun[n] [>:>] ClassMarker[n]) | (DemPronoun[pl] [>:>] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р])))
+DemPronoun[com] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)?
+DemPronoun[com] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)?
+DemPronoun[com] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)?
+DemPronoun[com] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)?
+DemPronoun[m] [>:>] ([<m><sg>><erg>:щ>ти] | (OblMarker[m] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))))) ([>:>] SpatialCase)?
+DemPronoun[f] [>:>] ([<f><sg>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
+DemPronoun[n] [>:>] ([<n><sg>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
+DemPronoun[pl] [>:>] OblMarker[hpl] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-gen]))) ([>:>] SpatialCase)?
+DemPronoun[pl] [>:>] OblMarker[npl] [>:>] CaseMarker ([>:>] SpatialCase)?
+DemPronoun[com] [>:>] OblMarker [>:>] SpatialCase
+((DemPronoun[m] [>:>] OblMarker[m]) | (DemPronoun[f] [>:>] OblMarker[f]) | (DemPronoun[n] [>:>] OblMarker[n]) | (DemPronoun[pl] [>:>] OblMarker[pl])) [>:>] SpatialCase
 
 ([сануда<PRON>:сануда] | [тIорда<PRON>:тIорда])
 [тIорда<PRON>:тIорда] [>:>] ([<obl><h><pl>:ду] | [<obl><n><pl>:ди]) [>:>] CaseMarker ([>:>] SpatialCase)?
@@ -78,13 +84,20 @@ LEXICON IntPronoun
 интто<PRON>:интто[st]
 
 LEXICON DemPronoun
-гьа<PRON>:гьа
-гьу<PRON>:гьу
-гьада<PRON>:гьада
-гьудо<PRON>:гьудо
-гье<PRON>:гье
-гьо<PRON>:гьо
-э<PRON>><which>:э>губа
+гьа:гьа[com]
+гьу:гьу[com]
+гьадо<PRON>:гьадо[m]
+гьадо<PRON>:гьаде[f]
+гьадо<PRON>:гьада[n]
+гьадо<PRON>:гьада[pl]
+гьудо<PRON>:гьудо[m]
+гьудо<PRON>:гьуде[f]
+гьудо<PRON>:гьуда[n]
+гьудо<PRON>:гьуда[pl]
+гье<PRON>:гье[com]
+гьо<PRON>:гьо[com]
+бокьара<PRON>:бокьара[com]
+э<PRON>><which>:э>губа[com]
 
 LEXICON ClassMarker
 <m>:в[m]
