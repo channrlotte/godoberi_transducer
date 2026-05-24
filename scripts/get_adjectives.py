@@ -66,16 +66,16 @@ def add_base(lemma: str, stem: str, ma: int=0, fe: int=0, ne: int=0, hupl: int=0
             obl_common_c.add(f'{lemma}<ADJ>:{stem}')
 
 
-with (open('godoberi.csv', 'rt', encoding='utf-8') as file):
+with open('godoberi.csv', 'rt', encoding='utf-8') as file:
     for line in csv.reader(file):
         if line[11] != 'adj' or ('(зиб.)' in line[6]):
             continue
 
         word = correct(line[4])
-        morphology = correct(line[9])
-        translation = line[21]
-
         c = get_class(line[6])
+        morphology = correct(line[9])
+        translation = line[21].replace(' ', '_')
+
         if c == 2:
             if word.startswith('й/'):
                 lemma = word.replace('/', '')
