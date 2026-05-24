@@ -10,25 +10,24 @@ AdjectiveOblHPL [>:>] DeclensionHPL
 AdjectiveOblNPL [>:>] DeclensionNPL
 
 PATTERN DeclensionM
-[<m>:щ] [>:>] [<erg>:ти]
-OblMarker[m] [<gen>:]
-OblMarker[m] [>:>] [<gen>:] [:б]
-OblMarker[m] [>:>] (CaseMarker[-erg,-gen] | SpatialCase)
+[<obl><m>:щ] [>:>] [<erg>:ти] ([>:>] SpatialCase)?
+OblMarker[m] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)?
+OblMarker[m] [>:>] (CaseMarker[-erg,-gen] | SpatialCase | (CaseMarker[-erg,-gen] [>:>] SpatialCase))
 
 PATTERN DeclensionF
-[<f>:т] [>:>] [<erg>:ти]
-OblMarker[f] [>:>] (CaseMarker[-erg] | SpatialCase)
+[<obl><f>:т] [>:>] [<erg>:ти] ([>:>] SpatialCase)?
+OblMarker[f] [>:>] (CaseMarker[-erg] | SpatialCase | (CaseMarker[-erg] [>:>] SpatialCase))
 
 PATTERN DeclensionN
-[<n>:т] [>:>] [<erg>:ти]
-OblMarker[n] [>:>] (CaseMarker[-erg] | SpatialCase)
+[<n>:т] [>:>] [<erg>:ти] ([>:>] SpatialCase)?
+OblMarker[n] [>:>] (CaseMarker[-erg] | SpatialCase | (CaseMarker[-erg] [>:>] SpatialCase))
 
 PATTERN DeclensionHPL
-OblMarker[hpl] ([<gen>:] | ([>:>] [<gen>:б]))
-OblMarker[hpl] [>:>] (CaseMarker[-gen] | SpatialCase)
+OblMarker[hpl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)?
+OblMarker[hpl] [>:>] (CaseMarker[-gen] | SpatialCase | (CaseMarker[-gen] [>:>] SpatialCase))
 
 PATTERN DeclensionNPL
-OblMarker[npl] [>:>] (CaseMarker | SpatialCase)
+OblMarker[npl] [>:>] (CaseMarker | SpatialCase | (CaseMarker [>:>] SpatialCase))
 
 PATTERN SpatialCase
 LocMarker ([<ess>:] | [<lat>:])
