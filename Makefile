@@ -15,7 +15,7 @@ remove_hyphen.hfst: remove_hyphen.twol
 	hfst-twolc -q $< -o $@
 
 generator.hfst: numerals.hfst pronouns.hfst adjectives.hfst nouns.hfst
-	hfst-union numerals.hfst pronouns.hfst | hfst-union adjectives.hfst -o $@
+	hfst-union numerals.hfst pronouns.hfst | hfst-union adjectives.hfst | hfst-union nouns.hfst -o $@
 
 %.hfst: %.lexd
 	lexd $< | hfst-txt2fst -o $@
