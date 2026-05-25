@@ -14,7 +14,7 @@ analyzer.hfst: generator.hfst remove_hyphen.hfst
 remove_hyphen.hfst: remove_hyphen.twol
 	hfst-twolc -q $< -o $@
 
-generator.hfst: numerals.hfst pronouns.hfst adjectives.hfst
+generator.hfst: numerals.hfst pronouns.hfst adjectives.hfst nouns.hfst
 	hfst-union numerals.hfst pronouns.hfst | hfst-union adjectives.hfst -o $@
 
 %.hfst: %.lexd
@@ -35,4 +35,11 @@ adjectives_lexicon.lexd: adjectives/regular/m.txt adjectives/exceptions/m.txt \
 						 adjectives/regular/obl_hpl.txt adjectives/exceptions/obl_hpl.txt \
 						 adjectives/regular/obl_npl.txt adjectives/exceptions/obl_npl.txt \
 						 adjectives/regular/obl_common_c.txt adjectives/regular/obl_common_v.txt
+	cat $+ > $@
+
+nouns_lexicon.lexd: nouns/regular/common.txt nouns/exceptions/common.txt \
+					nouns/regular/obl_common.txt nouns/exceptions/obl_common.txt \
+					nouns/regular/obl_m.txt nouns/exceptions/obl_m.txt \
+					nouns/regular/obl_f.txt nouns/exceptions/obl_f.txt \
+					nouns/regular/obl_hpl.txt
 	cat $+ > $@

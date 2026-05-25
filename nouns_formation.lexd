@@ -1,0 +1,41 @@
+PATTERNS
+Noun ([>:>] [<comit>:лалъи])? ([>:>] [<and>:ла])?
+NounObl [>:>] (CaseMarker | SpatialCase | (CaseMarker [>:>] SpatialCase)) ([>:>] [<and>:ла])?
+
+NounOblM [>:>] [<obl><m>:щ] [>:>] [<erg>:ти] ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+NounOblM [>:>] [<obl><m>:щу] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+NounOblM [>:>] [<obl><m>:щу] [>:>] (CaseMarker[-erg,-gen] | SpatialCase | (CaseMarker[-erg,-gen] [>:>] SpatialCase)) ([>:>] [<and>:ла])?
+
+NounOblF [>:>] [<obl><f>:т] [>:>] [<erg>:ти] ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+NounOblF [>:>] [<obl><f>:лълъи] [>:>] (CaseMarker[-erg] | SpatialCase | (CaseMarker[-erg] [>:>] SpatialCase)) ([>:>] [<and>:ла])?
+
+NounOblHPl ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+NounOblHPl [>:>] (CaseMarker[-gen] | SpatialCase | (CaseMarker[-gen] [>:>] SpatialCase)) ([>:>] [<and>:ла])?
+
+PATTERN SpatialCase
+LocMarker ([<ess>:] | [<lat>:])
+LocMarker[-cont] [>:>] DirMarker
+LocMarker[cont] [>:>] DirMarker[-al,-trans]
+
+LEXICON LocMarker
+<sup>:ла
+<cont>:чIу[cont]
+<in>:о
+<inter>:лIи
+<apud>:ха
+<ad>:хъи
+<place>:алда
+
+LEXICON DirMarker
+<elat>:ру
+<allat>:ху[al]
+<translat>:руху[trans]
+<translat>:риди[trans]
+<translat>:руди[trans]
+<translat>:рикьи[trans]
+
+LEXICON CaseMarker
+<erg>:ди[erg]
+<gen>:лIи[gen]
+<dat>:лъи
+<aff>:ра
