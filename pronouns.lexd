@@ -1,59 +1,59 @@
 PATTERNS
-Pronoun ([<erg>:] ([>:>] SpatialCase)?)? ([>:>] [<emph>:да])?
-PronounObl [>:>] (((ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:]) | CaseMarker[-erg,-gen]) ([>:>] SpatialCase)? ([>:>] [<emph>:да])?
-PronounObl [>:>] SpatialCase ([>:>] [<emph>:да])?
+Pronoun ([<erg>:] ([>:>] SpatialCase)?)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+PronounObl [>:>] (((ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:]) | CaseMarker[-erg,-gen]) ([>:>] SpatialCase)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+PronounObl [>:>] SpatialCase ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
 
-(([жи<PRON>:жи] [>:>] ClassMarker) | [жи<PRON><pl>:жал]) ([>:>] [<emph>:да])?
-[жи<PRON><obl>:ин] [>:>] [<obl>:] ([<m><erg>:що] | (([<f>:] | [<n>:]) [<erg>:лълъе]) | [<pl><erg>:до]) ([>:>] SpatialCase)? ([>:>] [<emph>:да])?
-[жи<PRON><obl>:ин] [>:>] (OblMarker[m] | [<obl><pl>:ду]) ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<emph>:да])?
-[жи<PRON><obl>:ин] [>:>] OblMarker[-m,-hpl,-npl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<emph>:да])?
-[жи<PRON><obl>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[dat] ([>:>] SpatialCase)?
-[жи<PRON><obl>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] [<dat><emph>:тта]
-[жи<PRON><obl>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[dat] [>:>] SpatialCase [>:>] [<emph>:да]
-[жи<PRON><obl>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[aff] ([>:>] SpatialCase)? ([>:>] [<emph>:да])?
-[жи<PRON><obl>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] SpatialCase ([>:>] [<emph>:да])?
+(([жи<PRON>:жи] [>:>] ClassMarker) | [жи<PRON><pl>:жал]) ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] [<obl>:] ([<m><erg>:що] | (([<f>:] | [<n>:]) [<erg>:лълъе]) | [<pl><erg>:до]) ([>:>] SpatialCase)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[m] | [<obl><pl>:ду]) ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] OblMarker[-m,-hpl,-npl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[dat] ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] [<dat><emph>:тта] ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[dat] [>:>] SpatialCase [>:>] [<emph>:да] ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] CaseMarker[aff] ([>:>] SpatialCase)? ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
+[жи<PRON>:ин] [>:>] (OblMarker[-hpl,-npl] | [<obl><pl>:ду]) [>:>] SpatialCase ([>:>] [<emph>:да])? ([>:>] [<and>:ла])?
 
-IntPronoun[com] [>:>] ClassMarker[-pl] ([>:>] (([<quest>:] ([:у] | [:да])) | [<indef>:дала]))?
-IntPronoun[com] [>:>] ClassMarker[-pl] ([:>у] | [:>и]) ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
-IntPronoun[com] ClassMarker[pl] ([>:>] (([<quest>:] ([:у] | [:да])) | [<indef>:дала]))?
-IntPronoun[pers] ([<erg>:] | ([>:>] CaseMarker[-erg,-gen])) ([>:>] SpatialCase)? ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
-IntPronoun[pers] [>:>] ([<m>:ву] | [<f>:йиву] | [<n>:бу] | [<h><pl>:бу] | [<n><pl>:риву]) [<gen><quest>:]
-IntPronoun[pers] [>:>] (ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:] ([>:>] ([<quest>:да] | [<indef>:дала]))?
-IntPronoun[pers] [>:>] (ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:] [>:>] SpatialCase ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
-IntPronoun[com] [>:>] (ClassMarker[pl] | (OblMarker[-m,-f,-n] [>:>] CaseMarker ([>:>] SpatialCase)?)) ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
-(IntPronoun[n] | (IntPronoun[com] OblMarker[-m,-f,-n])) [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
-(IntPronoun[-com,-adj,-st] | (IntPronoun[com] [>:>] OblMarker[-m,-f,-n])) [>:>] SpatialCase ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))?
+IntPronoun[com] [>:>] ClassMarker[-pl] ([>:>] (([<quest>:] ([:у] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[com] [>:>] ClassMarker[-pl] ([:>у] | [:>и]) ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[com] ClassMarker[pl] ([>:>] (([<quest>:] ([:у] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[pers] ([<erg>:] | ([>:>] CaseMarker[-erg,-gen])) ([>:>] SpatialCase)? ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[pers] [>:>] ([<m>:ву] | [<f>:йиву] | [<n>:бу] | [<h><pl>:бу] | [<n><pl>:риву]) [<gen><quest>:] ([>:>] [<and>:ла])?
+IntPronoun[pers] [>:>] (ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:] ([>:>] ([<quest>:да] | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[pers] [>:>] (ClassMarker[-pl] | [<h><pl>:б] | [<n><pl>:р]) [<gen>:] [>:>] SpatialCase ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+IntPronoun[com] [>:>] (ClassMarker[pl] | (OblMarker[-m,-f,-n] [>:>] CaseMarker ([>:>] SpatialCase)?)) ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+(IntPronoun[n] | (IntPronoun[com] OblMarker[-m,-f,-n])) [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
+(IntPronoun[-com,-adj,-st] | (IntPronoun[com] [>:>] OblMarker[-m,-f,-n])) [>:>] SpatialCase ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
 
 (IntPronoun[adj] | IntPronoun[st]) ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-IntPronoun[adj] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-IntPronoun[adj] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-IntPronoun[adj] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-IntPronoun[adj] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-IntPronoun[st] ([>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])))? ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
-((IntPronoun[adj] [>:>] OblMarker) | (IntPronoun[st] [>:>] OblMarker[n])) [>:>] SpatialCase ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
+IntPronoun[adj] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
+IntPronoun[adj] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
+IntPronoun[adj] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
+IntPronoun[adj] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
+IntPronoun[st] ([>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])))? ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
+((IntPronoun[adj] [>:>] OblMarker) | (IntPronoun[st] [>:>] OblMarker[n])) [>:>] SpatialCase ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 
 DemPronoun[com] [>:>] (ClassMarker | [<h><pl>:б] | [<n><pl>:р])
-((DemPronoun[m] [>:>] ClassMarker[m]) | (DemPronoun[f] [>:>] ClassMarker[f]) | (DemPronoun[n] [>:>] ClassMarker[n]) | (DemPronoun[pl] [>:>] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р])))
-DemPronoun[com] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)?
-DemPronoun[com] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)?
+((DemPronoun[m] [>:>] ClassMarker[m]) | (DemPronoun[f] [>:>] ClassMarker[f]) | (DemPronoun[n] [>:>] ClassMarker[n]) | (DemPronoun[pl] [>:>] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р]))) ([>:>] [<and>:ла])?
+DemPronoun[com] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[com] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)?
 DemPronoun[com] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)?
-DemPronoun[m] [>:>] ([<m><sg>><erg>:щ>ти] | (OblMarker[m] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))))) ([>:>] SpatialCase)?
-DemPronoun[f] [>:>] ([<f><sg>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
-DemPronoun[n] [>:>] ([<n><sg>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
-DemPronoun[pl] [>:>] OblMarker[hpl] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-gen]))) ([>:>] SpatialCase)?
-DemPronoun[pl] [>:>] OblMarker[npl] [>:>] CaseMarker ([>:>] SpatialCase)?
-DemPronoun[com] [>:>] OblMarker [>:>] SpatialCase
-((DemPronoun[m] [>:>] OblMarker[m]) | (DemPronoun[f] [>:>] OblMarker[f]) | (DemPronoun[n] [>:>] OblMarker[n]) | (DemPronoun[pl] [>:>] OblMarker[pl])) [>:>] SpatialCase
+DemPronoun[m] [>:>] ([<m><sg>><erg>:щ>ти] | (OblMarker[m] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[f] [>:>] ([<f><sg>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[n] [>:>] ([<n><sg>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[pl] [>:>] OblMarker[hpl] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-gen]))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[pl] [>:>] OblMarker[npl] [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[com] [>:>] OblMarker [>:>] SpatialCase ([>:>] [<and>:ла])?
+((DemPronoun[m] [>:>] OblMarker[m]) | (DemPronoun[f] [>:>] OblMarker[f]) | (DemPronoun[n] [>:>] OblMarker[n]) | (DemPronoun[pl] [>:>] OblMarker[pl])) [>:>] SpatialCase ([>:>] [<and>:ла])?
 
-([сануда<PRON>:сануда] | [тIорда<PRON>:тIорда])
-[тIорда<PRON>:тIорда] [>:>] ([<obl><h><pl>:ду] | [<obl><n><pl>:ди]) [>:>] CaseMarker ([>:>] SpatialCase)?
-[тIорда<PRON>:тIорда] [>:>] ([<obl><h><pl>:ду] | [<obl><n><pl>:ди]) [>:>] SpatialCase
+([сануда<PRON>:сануда] | [тIорда<PRON>:тIорда]) ([>:>] [<and>:ла])?
+[тIорда<PRON>:тIорда] [>:>] ([<obl><h><pl>:ду] | [<obl><n><pl>:ди]) [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+[тIорда<PRON>:тIорда] [>:>] ([<obl><h><pl>:ду] | [<obl><n><pl>:ди]) [>:>] SpatialCase ([>:>] [<and>:ла])?
 
-([<distr>>жи<PRON>><m>:жив>жи>в] | [<distr>>жи<PRON>><f>:жий>жи>й] | [<distr>>жи<PRON>><n>:жиб>жи>б]) ([>:>] SpatialCase)?
-[<distr>>жи<PRON>><m>:жив>жи>в] [>:>] ([<obl><m>><erg>:щ>ти] | (OblMarker[m] [>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))) ([>:>] SpatialCase)?
-[<distr>>жи<PRON>><f>:жий>жи>й] [>:>] ([<obl><f>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
-[<distr>>жи<PRON>><n>:жиб>жи>б] [>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)?
+([<distr>>жи<PRON>><m>:жив>жи>в] | [<distr>>жи<PRON>><f>:жий>жи>й] | [<distr>>жи<PRON>><n>:жиб>жи>б]) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+[<distr>>жи<PRON>><m>:жив>жи>в] [>:>] ([<obl><m>><erg>:щ>ти] | (OblMarker[m] [>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+[<distr>>жи<PRON>><f>:жий>жи>й] [>:>] ([<obl><f>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+[<distr>>жи<PRON>><n>:жиб>жи>б] [>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 
 PATTERN SpatialCase
 LocMarker ([<ess>:] | [<lat>:])
@@ -68,8 +68,8 @@ LEXICON Pronoun
 битте<PRON>:битте
 
 LEXICON PronounObl
-ден<PRON><obl>:ди
-мин<PRON><obl>:ду
+ден<PRON>:ди
+мин<PRON>:ду
 ище<PRON>><obl>:ищ>и
 илIе<PRON>><obl>:илI>и
 битте<PRON>><obl>:битт>и

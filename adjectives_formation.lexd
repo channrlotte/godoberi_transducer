@@ -1,13 +1,13 @@
 PATTERNS
-Adjective
-((AdjectiveOblC [>:>] [<obl>:а]) | AdjectiveOblV) [>:>] (DeclensionM | DeclensionF | DeclensionN | DeclensionHPL | DeclensionNPL)
+Adjective ([>:>] [<and>:ла])?
+((AdjectiveOblC [>:>] [<obl>:а]) | AdjectiveOblV) [>:>] (DeclensionM | DeclensionF | DeclensionN | DeclensionHPL | DeclensionNPL) ([>:>] [<and>:ла])?
 
-AdjectiveM | AdjectiveF | AdjectiveN | AdjectiveHPL | AdjectiveNPL
-AdjectiveOblM [>:>] DeclensionM
-AdjectiveOblF [>:>] DeclensionF
-AdjectiveOblN [>:>] DeclensionN
-AdjectiveOblHPL [>:>] DeclensionHPL
-AdjectiveOblNPL [>:>] DeclensionNPL
+(AdjectiveM | AdjectiveF | AdjectiveN | AdjectiveHPL | AdjectiveNPL) ([>:>] [<and>:ла])?
+AdjectiveOblM [>:>] DeclensionM ([>:>] [<and>:ла])?
+AdjectiveOblF [>:>] DeclensionF ([>:>] [<and>:ла])?
+AdjectiveOblN [>:>] DeclensionN ([>:>] [<and>:ла])?
+AdjectiveOblHPL [>:>] DeclensionHPL ([>:>] [<and>:ла])?
+AdjectiveOblNPL [>:>] DeclensionNPL ([>:>] [<and>:ла])?
 
 PATTERN DeclensionM
 [<obl><m>:щ] [>:>] [<erg>:ти] ([>:>] SpatialCase)?
