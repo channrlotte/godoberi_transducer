@@ -244,7 +244,7 @@
 31,kyarti-qi,к'арти-хъи,к'арти-хъи,fence-AD,к'арти<NOUN>><ad>,,
 31,hilya-riL'i,гьил'а-рикьи,гьил'а-рикьи,above-TRANS,,,
 31,huda=b,гьуда=б,гьуда=б,that=N,гьудо<PRON>><n>,,
-31,is-a-qi,ис-а-хъи,ис-а-хъи,side-OBL-AD,исиб<NOUN>><obl>><ad>,70035,abs
+31,is-a-qi,ис-а-хъи,ис-а-хъи,side-OBL-AD,ис<NOUN>><obl>><ad>,70035,abs
 31,w=oč-ant-a-wq'aLi,в=оч-ант-а-вкъалIи,в=оч-ант-а-вкъалIи,M=carry.out-PRS-CONV-WHEN,,,
 31,musa-Li,муса-лIи,муса-лIи,Musa-GEN,муса<NOUN>><gen>,,abs
 31,č̄ak̄.-e,ччаккв-е,ччаккв-е,gut-PL,ччакква<NOUN>><pl>,73903,
@@ -373,7 +373,7 @@
 48,w=uR-ič'-a-łara,в=угъ-ичI-а-лъара,в=угъ-ичI-а-лъара,M=stop.PST-NEG-CONV-IF,,,
 48,den,ден,ден,I.ERG,ден<PRON><erg>,,
 48,min,мин,мин,you,мин<PRON>,,
-48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,
+48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,abs
 48,ik-i-Li-bu-wa:-L'u,ик-и-лIи-бу-ва̄-кьу,ик-и-лIи-бу-ва̄-кьу,give-INF-FUT-PART-EPT-CIT,,,
 49,mak'i,макIи,макIи,child,макIи<NOUN>,71292,
 49,qad-a-bu,хъад-а-бу,хъад-а-бу,cry-AP-PART,,,
