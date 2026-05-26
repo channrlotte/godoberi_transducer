@@ -21,7 +21,7 @@
 2,ho=b,гьо=б,гьо=б,that=N,гьо<PRON>><n>,,
 2,zamana-Li,замана-лIи,замана-лIи,time-INTER,замана<NOUN>><inter>,69643,
 2,suRraLi,сугъралIи,сугъралIи,Sogratl,сугъралIи<NOUN>,,abs
-2,han-Li-s̄u,гьан-лIи-ссу,гьан-лIи-ссу,village-INTER-ATTR,гьани<NOUN>><inter>><attr>,68773,morph
+2,han-Li-s̄u,гьан-лIи-ссу,гьан-лIи-ссу,village-INTER-ATTR,гьани<NOUN>><inter>><attr>,68773,"morph, part"
 2,adami,адами,адами,man,адами<NOUN>,66881,
 2,wu=k'-a-da,ву=кI-а-да,ву=кI-а-да,M=be.PST-CONV-COP,,,
 2,gurži,гуржи,гуржи,Georgia,гуржи<NOUN>,68406,abs
@@ -54,7 +54,7 @@
 4,sanu,сану,сану,together,,,
 4,wu=k'-a-da,ву=кI-а-да,ву=кI-а-да,M=be.PST-CONV-COP,,,
 4,RebdiLi,гъебдилIи,гъибдилIи,Godoberian,гъибдилIи<NOUN>,68569,orph
-4,ʕalik'ya-L'u,гIаликI'а-кьу,гIаликI'а-кьу,Alikja-CIT,гIаликI'а<NOUN>><cit>,,abs
+4,ʕalik'ya-L'u,гIаликI'а-кьу,гIаликI'а-кьу,Alikja-CIT,гIаликI'а<NOUN>><cit>,,"abs, part"
 4,hiL'-ata-bu,гьикь-ата-бу,гьикь-ата-бу,name-PRS-PART,,,
 4,adami,адами,адами,man,адами<NOUN>,66881,
 5,ʕalik'ya,гIаликI'а,гIаликI'а,Alikja,гIаликI'а<NOUN>,,abs
@@ -65,13 +65,13 @@
 6,gurži(-Li),гуржи-лIи,гуржи-лIи,Georgia(-GEN),гуржи<NOUN>><gen>,68406,abs
 6,ʕurqi-la,гIурхъи-ла,гIурхъи-ла,border-SUPER,гIурхъи<NOUN>><sup>,69400,
 6,b=ac'-ã-wuq'aLi,б=ацI-аᵸ-вукъалIи,б=ацI-аᵸ-вукъалIи,HPL=reach.PST-CONV-WHEN,,,
-6,k.aXtaLi-s̄u,квахталIи-ссу,квахталIи-ссу,Kwahidatli-ATTR,квахталIи<NOUN>><attr>,,abs
+6,k.aXt̄aLi-s̄u,квахтталIи-ссу,квахтталIи-ссу,Kwahidatli-ATTR,квахтталIи<NOUN>><attr>,,"abs, part"
 6,adami,адами,адами,man,адами<NOUN>,66881,
-6,musa-L'u,муса-кьу,муса-кьу,Musa-CIT,муса<NOUN>><cit>,,part
+6,musa-L'u,муса-кьу,муса-кьу,Musa-CIT,муса<NOUN>><cit>,,"abs, part"
 6,hiL'i-bu,гьикьи-бу,гьикьи-бу,name.PST-PART,,,
 6,ho=w=la,гьо=в=ла,гьо=в=ла,he=M=AND,гьо<PRON>><m>><and>,,
 6,wu=k'-a-da,ву=кI-а-да,ву=кI-а-да,M=be.PST-CONV-COP,,,
-6,ʕalik'ya-c̄imu-s̄u,гIаликI'а-цциму-ссу,гIаликI'а-цциму-ссу,Alikja-LIKE-ATTR,гIаликI'а<NOUN>><like>><cit>,,abs
+6,ʕalik'ya-c̄imu-s̄u,гIаликI'а-цциму-ссу,гIаликI'а-цциму-ссу,Alikja-LIKE-ATTR,гIаликI'а<NOUN>><like>><cit>,,"abs, part"
 6,L'ant'i,кьантIи,кьантIи,brave,кьантIи<ADJ>,70731,
 6,adami,адами,адами,man,адами<NOUN>,66881,
 7,ho=b=e,гьо=б=е,гьо=б=е,he-HPL-PL,гьо<PRON>><h><pl>,,
@@ -373,7 +373,7 @@
 48,w=uR-ič'-a-łara,в=угъ-ичI-а-лъара,в=угъ-ичI-а-лъара,M=stop.PST-NEG-CONV-IF,,,
 48,den,ден,ден,I.ERG,ден<PRON><erg>,,
 48,min,мин,мин,you,мин<PRON>,,
-48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,abs
+48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,"abs, ept"
 48,ik-i-Li-bu-wa:-L'u,ик-и-лIи-бу-ва̄-кьу,ик-и-лIи-бу-ва̄-кьу,give-INF-FUT-PART-EPT-CIT,,,
 49,mak'i,макIи,макIи,child,макIи<NOUN>,71292,
 49,qad-a-bu,хъад-а-бу,хъад-а-бу,cry-AP-PART,,,
