@@ -212,14 +212,14 @@ with open('godoberi.csv', 'rt', encoding='utf-8') as f:
                     add_pl(lemma, stem, lemma)
 
             elif len(morphology) == 3:
-                add_sg(c, lemma, stem, morphology[0])
-                add_sg(c, lemma, stem, morphology[1])
+                add_sg(1, lemma, stem, morphology[0])
+                add_sg(2, lemma, stem, morphology[1])
                 add_pl(lemma, stem, morphology[2])
 
             elif len(morphology) == 2:
                 if c == 4:
-                    add_sg(c, lemma, stem, morphology[0])
-                    add_sg(c, lemma, stem, morphology[1])
+                    add_sg(1, lemma, stem, morphology[0])
+                    add_sg(2, lemma, stem, morphology[1])
                 else:
                     for m in get_variants(morphology[0]):
                         add_sg(c, lemma, stem, m)

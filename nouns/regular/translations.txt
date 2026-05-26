@@ -1287,6 +1287,7 @@ LEXICON Translations
 к'ану<NOUN>:улей<NOUN>
 к'ану<NOUN>:решето<NOUN>
 к'анцерти<NOUN>:концерт<NOUN>
+к'апурав<NOUN>:кафир<NOUN>
 к'апурадами<NOUN>:безбожник<NOUN>
 к'апуста<NOUN>:капуста<NOUN>
 к'аравати<NOUN>:кровать<NOUN>
@@ -3360,3 +3361,5 @@ LEXICON Translations
 эххета<NOUN>:дверная_коробка<NOUN>
 эча<NOUN>:каша<NOUN>
 эшура<NOUN>:осот<NOUN>
+к'апурай<NOUN>:кафир<NOUN>
+к'апурал<NOUN>:кафир<NOUN>
