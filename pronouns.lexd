@@ -56,7 +56,7 @@ DemPronoun[com] [>:>] OblMarker [>:>] SpatialCase ([>:>] [<and>:ла])?
 [<distr>>жи<PRON>><n>:жиб>жи>б] [>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 
 PATTERN SpatialCase
-LocMarker ([<ess>:] | [<lat>:])
+LocMarker
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 

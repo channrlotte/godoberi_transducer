@@ -30,7 +30,7 @@ PATTERN DeclensionNPL
 OblMarker[npl] [>:>] (CaseMarker | SpatialCase | (CaseMarker [>:>] SpatialCase))
 
 PATTERN SpatialCase
-LocMarker ([<ess>:] | [<lat>:])
+LocMarker
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 

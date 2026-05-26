@@ -44,7 +44,7 @@ PATTERN Declension
 OblMarker [>:>] (CaseMarker[-erg,-gen] | SpatialCase)
 
 PATTERN SpatialCase
-LocMarker ([<ess>:] | [<lat>:])
+LocMarker
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 

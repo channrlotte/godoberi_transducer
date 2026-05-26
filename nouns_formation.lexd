@@ -13,7 +13,7 @@ NounOblHPl ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:л
 NounOblHPl [>:>] (CaseMarker[-gen] | SpatialCase | (CaseMarker[-gen] [>:>] SpatialCase)) ([>:>] [<and>:ла])?
 
 PATTERN SpatialCase
-LocMarker ([<ess>:] | [<lat>:])
+LocMarker
 LocMarker[-cont] [>:>] DirMarker
 LocMarker[cont] [>:>] DirMarker[-al,-trans]
 
