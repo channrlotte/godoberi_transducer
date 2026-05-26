@@ -134,7 +134,7 @@
 14,ho=b=e,гьо=б=е,гьо=б=е,he=HPL=PL,гьо<PRON>><h><pl>,,
 14,hila,гьила,гьила,upstairs,,,
 14,b=aXid-u-da,б=ахид-у-да,б=ахид-у-да,HPL=go.up.PST-CONV-COP,,,
-14,lamur-a,ламур-а,ламур-а,roof-IN,ламур<NOUN>><in>,,morph
+14,lamur-a,ламур-а,ламур-а,roof-IN,ламур<NOUN>><in>,71010,
 15,s̄e=b=a,ссе=б=а,ссе=б=а,formerly=N,,,
 15,hanq'u-Li,гьанкъу-лIи,гьанкъу-лIи,house-INTER,гьанкъу<NOUN>><inter>,68784,
 15,hinu,гьину,гьину,in,,,
@@ -373,7 +373,7 @@
 48,w=uR-ič'-a-łara,в=угъ-ичI-а-лъара,в=угъ-ичI-а-лъара,M=stop.PST-NEG-CONV-IF,,,
 48,den,ден,ден,I.ERG,ден<PRON><erg>,,
 48,min,мин,мин,you,мин<PRON>,,
-48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,"abs, ept"
+48,lek'i-łi-wa,лекIи-лъи-ва,лекIи-лъи-ва,Avarian-DAT-EPT,лекIи<NOUN>><dat>><ept>,,"abs, part"
 48,ik-i-Li-bu-wa:-L'u,ик-и-лIи-бу-ва̄-кьу,ик-и-лIи-бу-ва̄-кьу,give-INF-FUT-PART-EPT-CIT,,,
 49,mak'i,макIи,макIи,child,макIи<NOUN>,71292,
 49,qad-a-bu,хъад-а-бу,хъад-а-бу,cry-AP-PART,,,
