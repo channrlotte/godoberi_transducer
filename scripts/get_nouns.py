@@ -115,7 +115,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
             obl_common.add(f'{lemma}<NOUN>><pl>:{morphology[:-2]}>{morphology[-2:]}')
         elif morphology.endswith('е'):
             common.add(f'{lemma}<NOUN>><pl>:{morphology[:-1]}>е')
-            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{morphology[:-1]}>ē')
+            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{morphology[:-1]}>е̄')
         else:
             common.add(f'{lemma}<NOUN><pl>:{morphology}')
             obl_common.add(f'{lemma}<NOUN><pl>:{morphology}')
@@ -171,7 +171,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
         if obl:
             obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{stem}>{obl}>ē')
         else:
-            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{stem}>ē')
+            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{stem}>е̄')
 
     else:
         common.add(f'{lemma}<NOUN>><obl>><pl>:{stem}>л')
