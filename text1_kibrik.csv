@@ -86,7 +86,7 @@
 8,ho=b,гьо=б,гьо=б,that=N,гьо<PRON>><n>,,
 8,zaman,заман,заман,time,замана<NOUN>,69643,apoc
 8,bu=k'-a-da,бу=кI-а-да,бу=кI-а-да,N=be.PST-CONV-COP,,,
-8,reładi-s̄u,релъади-ссу,релъади-ссу,at.night-ATTR,,,
+8,reładi-s̄u,релъади-ссу,релъади-ссу,at.night-ATTR,релъа<NOUN>><erg>><attr>,72154,part
 8,zamana,замана,замана,time,замана<NOUN>,69643,
 9,ha=b=e,гьа=б=е,гьа=б=е,this=HPL=PL,гьа<PRON>><h><pl>,,
 9,k'e-da-la,кIе-да-ла,кIе-да-ла,two-CARD-COLL,кIе<NUM>><card>><coll>,,
@@ -153,7 +153,7 @@
 17,ži=w,жи=в,жи=в,self=M,жи<PRON>><m>,,
 17,hinu-wa,гьину-ва,гьину-ва,inside-EPT,,,
 17,k'yanc'-ata,кI'анцI-ата,кI'анцI-ата,jump-PRS,,,
-17,hinu-s̄u,гьину-ссу,гьину-ссу,inside-ATTR,,,
+17,hinu-s̄u,гьину-ссу,гьину-ссу,inside-ATTR,гьинуссу<ADJ>,69035,
 17,adami-ke,адами-ке,адами-ке,man-PL,адами<NOUN>><pl>,66881,
 17,qam-i(-L'u),хъам-и(-кьу),хъам-и(-кьу),abduct-INF(-CIT),,,
 18,ʕalik'ya-di,гIаликI'а-ди,гIаликI'а-ди,Alikja-ERG,гIаликI'а<NOUN>><erg>,,abs
@@ -270,9 +270,9 @@
 35,w=ac'-in-qi,в=ацI-ин-хъи,в=ацI-ин-хъи,M=reach-INF-AD,,,
 35,iwuč'-a,ивучI-а,ивучI-а,be.PRS.NEG-CONV,,,
 35,hera,гьера,гьера,now,,,
-35,pajda,пайда,пайда,way.out,,,
+35,pajda,пайда,пайда,way.out,пайда<NOUN>,71745,
 35,iwuč'-a,ивучI-а,ивучI-а,be.PRS.NEG-CONV,,,
-35,iL-i=b,илI-и=б,илI-и=б,we.INCL-OBL=GEN.N,,,
+35,iL-i=b,илI-и=б,илI-и=б,we.INCL-OBL=GEN.N,илIе<PRON>><obl>><n><gen>,,
 35,ha=w=a,гьа=в=а,гьа=в=а,here=M,,,
 35,w=ot-a,в=от-а,в=от-а,M=leave-IMP,,,
 35,ži=w=L'u,жи=в=кьу,жи=в=кьу,self=M=CIT,жи<PRON>><m>><cit>,,part
@@ -321,7 +321,7 @@
 40,haʔ-ič'i-bu-łu,гьа-ичIи-бу-лъу,гьа-ичIи-бу-лъу,see-NEG-PART-LOC,,,
 41,łabu-łi,лъабу-лъи,лъабу-лъи,three-ORD,лъабу<NUM>><ord>,,
 41,zibu-Li,зибу-лIи,зибу-лIи,day-GEN,зибу<NOUN>><gen>,69684,
-41,reładi,релъади,релъади,by.night,,,
+41,reładi,релъади,релъади,by.night,релъа<NOUN>><erg>,72154,
 41,ʕalik'ya,гIаликI'а,гIаликI'а,Alikja,гIаликI'а<NOUN>,,abs
 41,is̄ira,иссира,иссира,outward,,,
 41,wu=L-u-da,ву=лI-у-да,ву=лI-у-да,M=become.PST-CONV-COP,,,
@@ -411,7 +411,7 @@
 53,wu=n-a-da,ву=н-а-да,ву=н-а-да,M=go.PST-CONV-COP,,,
 54,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,morph
 54,il-u-Li,ил-у-лIи,ил-у-лIи,mother-OBL-GEN,ила<NOUN>><obl>><gen>,69813,
-54,aHi-di,ахIи-ди,ахIи-ди,cry-ERG,,,
+54,aHi-di,ахIи-ди,ахIи-ди,cry-ERG,ахIи<NOUN>><erg>,67039,
 54,ʕalik'ya-č'u,гIаликI'а-чIу,гIаликI'а-чIу,Alikja-CONT,гIаликI'а<NOUN>><cont>,,abs
 54,b=eXut'u,б=ехутIу,б=ехутIу,HPL=behind,,,
 54,ba=L-u-da,ба=лI-у-да,ба=лI-у-да,HPL=become.PST-CONV-COP,,,
@@ -442,7 +442,7 @@
 59,q'uwata=w,къувата=в,къубата=в,strong=M,къубатав<ADJ>><m>,70664,orph
 59,adami,адами,адами,man,адами<NOUN>,66881,
 60,X̄anžar-u-di,хханжар-у-ди,хханжар-у-ди,dagger-OBL-ERG,хханжар<NOUN>><obl>><erg>,73094,
-60,hila-s̄u,гьила-ссу,гьила-ссу,above-ATTR,,,
+60,hila-s̄u,гьила-ссу,гьила-ссу,above-ATTR,гьилассу<ADJ>,1560,
 60,čara-łir-la,чаралъир-ла,чаралъир-ла,fat-MASD-AND,чаралъир<NOUN>><and>,73811,
 60,qab-al-u,хъаб-ал-у,хъаб-ал-у,tear-CAUS-CONV,,,
 60,č̄ak̄.-e:-Xa,ччаккв-е̄-ха,ччаккв-е̄-ха,gut-OBLPL-APUD,ччакква<NOUN>><pl><obl>><apud>,73903,
