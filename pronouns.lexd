@@ -24,7 +24,7 @@ IntPronoun[com] [>:>] (ClassMarker[pl] | (OblMarker[-m,-f,-n] [>:>] CaseMarker (
 (IntPronoun[n] | (IntPronoun[com] OblMarker[-m,-f,-n])) [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
 (IntPronoun[-com,-adj,-st] | (IntPronoun[com] [>:>] OblMarker[-m,-f,-n])) [>:>] SpatialCase ([>:>] (([<quest>:] ([:ву] | [:в] | [:да])) | [<indef>:дала]))? ([>:>] [<and>:ла])?
 
-(IntPronoun[adj] | IntPronoun[st]) ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))?
+(IntPronoun[adj] | IntPronoun[st]) ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 IntPronoun[adj] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 IntPronoun[adj] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 IntPronoun[adj] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
@@ -32,7 +32,7 @@ IntPronoun[adj] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)?
 IntPronoun[st] ([>:>] ([<obl><n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])))? ([>:>] SpatialCase)? ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 ((IntPronoun[adj] [>:>] OblMarker) | (IntPronoun[st] [>:>] OblMarker[n])) [>:>] SpatialCase ([>:>] [<quest>:] ([:ву] | [:в] | [:да]))? ([>:>] [<and>:ла])?
 
-DemPronoun[com] [>:>] (ClassMarker | [<h><pl>:б] | [<n><pl>:р])
+DemPronoun[com] [>:>] (ClassMarker | [<h><pl>:б] | [<n><pl>:р]) ([>:>] [<and>:ла])?
 ((DemPronoun[m] [>:>] ClassMarker[m]) | (DemPronoun[f] [>:>] ClassMarker[f]) | (DemPronoun[n] [>:>] ClassMarker[n]) | (DemPronoun[pl] [>:>] (ClassMarker[pl] | [<an><pl>:б] | [<inan><pl>:р]))) ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:ти]) | (OblMarker[-m,-f,-n] [>:>] CaseMarker[erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?

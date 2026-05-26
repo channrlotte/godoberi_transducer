@@ -169,7 +169,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
 
         obl = morphology[1:-1]
         if obl:
-            obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{stem}>{obl}>ē')
+            obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{stem}>{obl}>е̄')
         else:
             obl_common.add(f'{lemma}<NOUN>><pl><obl>:{stem}>е̄')
 
@@ -233,6 +233,7 @@ with open('godoberi.csv', 'rt', encoding='utf-8') as f:
                 for m in get_variants(morphology[0]):
                     m = m if m else '-лIи'
                     add_sg(c, lemma, stem, m)
+                    add_pl(lemma, stem, '-бе')
 
             elif lemma.endswith('ал'):
                 add_pl(lemma, stem, lemma)
