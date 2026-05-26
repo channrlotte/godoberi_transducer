@@ -106,7 +106,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
             obl_common.add(f'{lemma}<NOUN>><pl>:{morphology[:-4]}>{morphology[-4:]}')
         elif morphology.endswith('ал'):
             common.add(f'{lemma}<NOUN>><pl>:{morphology[:-1]}>л')
-            obl_hpl.add(f'{lemma}<NOUN>><pl>><obl><h><pl>:{morphology[:-1]}>рду')
+            obl_hpl.add(f'{lemma}<NOUN>><obl><h><pl>:{morphology[:-1]}>рду')
         elif morphology.endswith('ди'):
             common.add(f'{lemma}<NOUN>><pl>:{morphology[:-2]}>ди')
             obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{morphology[:-2]}>д>а')
@@ -115,7 +115,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
             obl_common.add(f'{lemma}<NOUN>><pl>:{morphology[:-2]}>{morphology[-2:]}')
         elif morphology.endswith('е'):
             common.add(f'{lemma}<NOUN>><pl>:{morphology[:-1]}>е')
-            obl_common.add(f'{lemma}<NOUN>><pl>:{morphology[:-1]}>ē')
+            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{morphology[:-1]}>ē')
         else:
             common.add(f'{lemma}<NOUN><pl>:{morphology}')
             obl_common.add(f'{lemma}<NOUN><pl>:{morphology}')
@@ -166,7 +166,12 @@ def add_pl(lemma: str, stem: str, morphology: str):
 
     elif morphology.endswith('е'):
         common.add(f'{lemma}<NOUN>><pl>:{stem}>{morphology[1:]}')
-        obl_common.add(f'{lemma}<NOUN>><pl>:{stem}>{morphology[1:-1]}ē')
+
+        obl = morphology[1:-1]
+        if obl:
+            obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{stem}>{obl}>ē')
+        else:
+            obl_common.add(f'{lemma}<NOUN>><pl><obl>:{stem}>ē')
 
     else:
         common.add(f'{lemma}<NOUN>><obl>><pl>:{stem}>л')
@@ -175,7 +180,7 @@ def add_pl(lemma: str, stem: str, morphology: str):
 
 with open('godoberi.csv', 'rt', encoding='utf-8') as f:
     for line in csv.reader(f):
-        if line[11] != 'noun' or ('зиб.' in line[6]) or ' ' in line[4]:
+        if line[11] != 'noun' or ('зиб.' in line[9]) or ' ' in line[4]:
             continue
 
         word = correct(line[4])
@@ -195,23 +200,16 @@ with open('godoberi.csv', 'rt', encoding='utf-8') as f:
                 add_sg(c, lemma, stem, morphology[0])
 
             elif 'тк. мн.' in morphology:
-                if morphology[0] != '-лIи':
+                if lemma.endswith('ал'):
+                    common.add(f'{lemma}<NOUN>:{stem}')
+
                     obl = morphology[0][1:-3]
-                    if lemma.endswith('ди'):
-                        common.add(f'{lemma}<NOUN>><pl>:{lemma[:-2]}>ди')
-                        obl_common.add(f'{lemma}<NOUN>><pl>><obl>:{lemma[:-2]}>д>{obl}')
+                    if obl:
+                        obl_common.add(f'{lemma}<NOUN>><obl>:{stem}>{obl}')
                     else:
-                        common.add(f'{lemma}<NOUN><pl>:{lemma}')
-                        obl_common.add(f'{lemma}<NOUN><pl>><obl>:{stem}>{obl}')
-                elif lemma[-4:] in ('алди', 'забе'):
-                    common.add(f'{lemma}<NOUN>><pl>:{lemma[:-4]}>{lemma[-4:]}')
-                    obl_common.add(f'{lemma}<NOUN>><pl>:{lemma[:-4]}>{lemma[-4:]}')
-                elif lemma[-2:] in ('ал', 'бе', 'ме', 'ди'):
-                    common.add(f'{lemma}<NOUN>><pl>:{lemma[:-2]}>{lemma[-2:]}')
-                    obl_common.add(f'{lemma}<NOUN>><pl>:{lemma[:-2]}>{lemma[-2:]}')
+                        obl_common.add(f'{lemma}<NOUN>:{stem}')
                 else:
-                    common.add(f'{lemma}<NOUN><pl>:{lemma}')
-                    obl_common.add(f'{lemma}<NOUN><pl>:{lemma}')
+                    add_pl(lemma, stem, lemma)
 
             elif len(morphology) == 3:
                 add_sg(c, lemma, stem, morphology[0])
@@ -241,11 +239,16 @@ with open('godoberi.csv', 'rt', encoding='utf-8') as f:
 
             elif lemma[-2:] in ('бе', 'ди'):
                 common.add(f'{lemma}<NOUN>><pl>:{lemma[:-2]}>{lemma[-2:]}')
-                obl_hpl.add(f'{lemma}<NOUN>><pl>:{stem}>{morphology[0][1:-1]}')
+
+                obl = morphology[0][1:-4]
+                if obl:
+                    obl_hpl.add(f'{lemma}<NOUN>><obl>><obl><h><pl>:{stem}>{obl}>рду')
+                else:
+                    obl_hpl.add(f'{lemma}<NOUN>><obl><h><pl>:{stem}>рду')
 
             else:
-                common.add(f'{lemma}<NOUN><pl>:{lemma}')
-                obl_hpl.add(f'{lemma}<NOUN><pl>><obl>:{stem}>{morphology[0][1:-1]}')
+                common.add(f'{lemma}<NOUN>:{lemma}')
+                obl_hpl.add(f'{lemma}<NOUN>><obl><h><pl>:{stem}>рду')
 
             translations.append(f'{lemma}<NOUN>:{translation}<NOUN>')
 
