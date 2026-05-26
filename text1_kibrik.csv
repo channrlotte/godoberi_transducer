@@ -109,7 +109,7 @@
 11,Rebdi-d-a-di,гъебди-д-а-ди,гъибди-д-а-ди,Godoberian-PL-OBLPL-ERG,гъибдиди<NOUN>><pl>><obl>><erg>,68568,orph
 11,b=aq'aš̄-ida,б=акъащ-ида,б=акъащ-ида,HPL=abduct-HAB,,,
 11,ba=k'.-a-da,ба=кIв-а-да,ба=кIв-а-да,HPL=be.PST-COP,,,
-11,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,abs
+11,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,morph
 12,ce=b,це=б,це=б,one=N,це<NUM>><n>,,
 12,hanq'u-č'u,гьанкъу-чIу,гьанкъу-чIу,house-CONT,гьанкъу<NOUN>><cont>,68784,
 12,hinu-ru(-Xu),гьину-ру(-ху),гьину-ру(-ху),inside-EL(-TRANS),,,
@@ -145,7 +145,7 @@
 16,tãwXa-qi,таᵸвха-хъи,тавуᵸха-хъи,fireplace-AD,тавуᵸха<NOUN>><ad>,72578,orph
 16,hinu-Xu,гьину-ху,гьину-ху,inside-ALL,,,
 16,hant'uk'yarik̄-u-da,гьантIукI'арикк-у-да,гьантIукI'арикк-у-да,listen.PST-CONV-COP,,,
-16,e=b=e-waqi,э=б=е-вахъи,э=б=е-вахъи,who=HPL-UPT,э<PRON>><h><pl>><upt>,part,
+16,e=b=e-waqi,э=б=е-вахъи,э=б=е-вахъи,who=HPL-UPT,э<PRON>><h><pl>><upt>,,part
 16,hinu,гьину,гьину,inside,,,
 16,ida-L'u,ида-кьу,ида-кьу,be.PRS-CIT,,,
 17,musa-di,муса-ди,муса-ди,Musa-ERG,муса<NOUN>><erg>,,abs
@@ -175,7 +175,7 @@
 21,anł-at-a,анлъ-ат-а,анлъ-ат-а,hear-PRS-CONV,,,
 21,bu=k'-a-da,бу=кI-а-да,бу=кI-а-да,N=be.PST-CONV-COP,,,
 21,musa-la,муса-ла,муса-ла,Musa-AND,муса<NOUN>><and>,,
-21,gurži-di-la,гуржи-ди-ла,гуржи-ди-ла,Georgian-PL-AND,гуржи<NOUN>><pl>><and>,68406,abs
+21,gurži-di-la,гуржи-ди-ла,гуржи-ди-ла,Georgian-PL-AND,гуржи<NOUN>><pl>><and>,68406,morph
 21,req.a,рехъва,рехъва,fight.PST,,,
 22,ho-š̄u-ra,гьо-щу-ра,гьо-щу-ра,he-OBL.M-AFF,гьо<PRON>><obl><m>><aff>,,
 22,anł-a-da,анлъ-а-да,анлъ-а-да,hear.PST-CONV-COP,,,
@@ -298,7 +298,7 @@
 38,in-š̄-o-ła,ин-що-лъа,ин-що-лъа,self.OBL-OBL.M-ERG-EPT,жи<PRON>><obl><m><erg>><ept>,,part
 38,dawla-łi,давла-лъи,давла-лъи,booty-DAT,давла<NOUN>><dat>,69407,
 38,k̄.ank̄.ad-bu,ккванкквад-бу,ккванкквад-бу,kill.many.PST-PART,,,
-38,gurži-d-a-č'u-ru,гуржи-д-а-чIу-ру,гуржи-д-а-чIу-ру,Georgian-PL-OBLPL-CONT-EL,гуржи<NOUN>><pl>><obl>><cont>><elat>,68406,
+38,gurži-d-a-č'u-ru,гуржи-д-а-чIу-ру,гуржи-д-а-чIу-ру,Georgian-PL-OBLPL-CONT-EL,гуржи<NOUN>><pl>><obl>><cont>><elat>,68406,morph
 38,r=uXi-bu-ła,р=ухи-бу-лъа,р=ухи-бу-лъа,NPL=take.away.PST-PART-EPT,,,
 38,ru=k'a-L'u,ру=кIа-кьу,ру=кIа-кьу,NPL=be.PST-CIT,,,
 39,ʕalik'ya-di,гIаликI'а-ди,гIаликI'а-ди,Alikja-ERG,гIаликI'а<NOUN>><erg>,,abs
@@ -409,13 +409,13 @@
 53,X̄.ani-lałi,ххвани-лалъи,ххвани-лалъи,horse-COMIT,ххвани<NOUN>><comit>,73118,
 53,caXa=w=a,цаха=в=а,цаха=в=а,away=M,,,
 53,wu=n-a-da,ву=н-а-да,ву=н-а-да,M=go.PST-CONV-COP,,,
-54,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,
+54,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,morph
 54,il-u-Li,ил-у-лIи,ил-у-лIи,mother-OBL-GEN,ила<NOUN>><obl>><gen>,69813,
 54,aHi-di,ахIи-ди,ахIи-ди,cry-ERG,,,
 54,ʕalik'ya-č'u,гIаликI'а-чIу,гIаликI'а-чIу,Alikja-CONT,гIаликI'а<NOUN>><cont>,,abs
 54,b=eXut'u,б=ехутIу,б=ехутIу,HPL=behind,,,
 54,ba=L-u-da,ба=лI-у-да,ба=лI-у-да,HPL=become.PST-CONV-COP,,,
-55,gurži-d-a-di,гуржи-д-а-ди,гуржи-д-а-ди,Georgian-PL-OBLPL-ERG,гуржи<NOUN>><pl>><obl>><erg>,68406,abs
+55,gurži-d-a-di,гуржи-д-а-ди,гуржи-д-а-ди,Georgian-PL-OBLPL-ERG,гуржи<NOUN>><pl>><obl>><erg>,68406,morph
 55,ʕalik'ya,гIаликI'а,гIаликI'а,Alikja,гIаликI'а<NOUN>,,abs
 55,raXaL'i,рахакьи,рахакьи,in.the.morning,,,
 55,b=eXut'u,б=ехутIу,б=ехутIу,HPL=behind,,,
@@ -445,7 +445,7 @@
 60,hila-s̄u,гьила-ссу,гьила-ссу,above-ATTR,,,
 60,čara-łir-la,чаралъир-ла,чаралъир-ла,fat-MASD-AND,чаралъир<NOUN>><and>,73811,
 60,qab-al-u,хъаб-ал-у,хъаб-ал-у,tear-CAUS-CONV,,,
-60,č̄ak̄.-e:-Xa,ччаккв-е̄-ха,ччаккв-е̄-ха,gut-OBLPL-APUD,ччакква<NOUN>><pl>><apud>,73903,
+60,č̄ak̄.-e:-Xa,ччаккв-е̄-ха,ччаккв-е̄-ха,gut-OBLPL-APUD,ччакква<NOUN>><pl><obl>><apud>,73903,
 60,b=ac'-inč'-a,б=ацI-инчI-а,б=ацI-инчI-а,N=reach.PST-NEG-CONV,,,
 60,bu=k'-a-da,бу=кI-а-да,бу=кI-а-да,N=be.PST-CONV-COP,,,
 61,ʕalik'ya-Li,гIаликI'а-лIи,гIаликI'а-лIи,Alikja-GEN,гIаликI'а<NOUN>><gen>,,abs
@@ -477,7 +477,7 @@
 64,ži=b=e-la,жи=бе-ла,жи=бе-ла,self=HPL=PL-AND,жи<PRON>><h><pl>><and>,,
 64,am-i-Li-bu-wa,ам-и-лIи-бу-ва,ам-и-лIи-бу-ва,eat-INF-FUT-PART-EPT,,,
 64,ida-L'u,ида-кьу,ида-кьу,be.PRS-CIT,,,
-65,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,abs
+65,gurži-di,гуржи-ди,гуржи-ди,Georgian-PL,гуржи<NOUN>><pl>,68406,morph
 65,caXa=b=a,цаха=б=а,цаха=б=а,away-HPL,,,
 65,č̄ač̄adi--wq'aLi,ччаччади--вкъалIи,ччаччади--вкъалIи,run.away.PST-WHEN,,,
 65,ʕalik'ya,гIаликI'а,гIаликI'а,Alikja,гIаликI'а<NOUN>,,abs
