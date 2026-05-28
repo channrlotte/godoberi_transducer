@@ -1,12 +1,15 @@
 .PHONY: all
 
-all: analyzer.hfstol generator.hfstol
+all: analyzer.hfstol generator.hfstol analyzer_stem_translation.hfstol
 
 substring_search: generator.hfst
 	@echo "$(REGEX)" | hfst-regexp2fst | hfst-compose-intersect generator.hfst | hfst-fst2strings
 
 %.hfstol: %.hfst
 	hfst-fst2fst -O $< -o $@
+
+analyzer_stem_translation.hfst: translations.lexd analyzer.hfst
+	lexd $< | hfst-txt2fst | hfst-repeat -f 1 | hfst-compose -1 analyzer.hfst -o $@
 
 analyzer.hfst: generator.hfst remove_hyphen.hfst
 	hfst-compose-intersect $^ | hfst-invert -o $@
@@ -42,4 +45,10 @@ nouns_lexicon.lexd: nouns/regular/common.txt nouns/exceptions/common.txt \
 					nouns/regular/obl_m.txt nouns/exceptions/obl_m.txt \
 					nouns/regular/obl_f.txt nouns/exceptions/obl_f.txt \
 					nouns/regular/obl_hpl.txt
+	cat $+ > $@
+
+translations.lexd: translations.txt \
+				   adjectives/regular/translations.txt adjectives/exceptions/translations.txt
+				   nouns/regular/translations.txt nouns/exceptions/translations.txt
+
 	cat $+ > $@
