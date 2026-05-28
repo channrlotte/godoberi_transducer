@@ -1,5 +1,5 @@
 PATTERNS
-translations
+Translations
 
 LEXICON Translations
 це<NUM>:один<NUM>
