@@ -38,9 +38,9 @@ DemPronoun[com] [>:>] (([<obl>:] ([<m>:щ] | [<f>:т] | [<n>:т]) [>:>] [<erg>:�
 DemPronoun[com] [>:>] OblMarker[-f,-n,-npl] ([<gen>:] | ([>:>] [<gen>:б])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] OblMarker[-m,-hpl] [>:>] CaseMarker[gen] ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] OblMarker [>:>] CaseMarker[-erg,-gen] ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
-DemPronoun[m] [>:>] ([<m><sg>><erg>:щ>ти] | (OblMarker[m] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
-DemPronoun[f] [>:>] ([<f><sg>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
-DemPronoun[n] [>:>] ([<n><sg>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[m] [>:>] ([<m>><erg>:щ>ти] | (OblMarker[m] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-erg,-gen]))))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[f] [>:>] ([<f>><erg>:т>ти] | (OblMarker[f] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
+DemPronoun[n] [>:>] ([<n>><erg>:т>ти] | (OblMarker[n] [>:>] CaseMarker[-erg])) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[pl] [>:>] OblMarker[hpl] ([<gen>:] | ([>:>] ([<gen>:б] | CaseMarker[-gen]))) ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[pl] [>:>] OblMarker[npl] [>:>] CaseMarker ([>:>] SpatialCase)? ([>:>] [<and>:ла])?
 DemPronoun[com] [>:>] OblMarker [>:>] SpatialCase ([>:>] [<and>:ла])?
