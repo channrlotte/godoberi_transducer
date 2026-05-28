@@ -32,6 +32,7 @@ LEXICON Translations
 бокьара<PRON>:любой<PRON>
 сануда<PRON>:весь<PRON>
 тIорда<PRON>:весь<PRON>
+>
 <ad>
 <aff>
 <allat>
