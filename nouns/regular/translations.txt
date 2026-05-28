@@ -1,5 +1,3 @@
-
-LEXICON Translations
 абазинав<NOUN>:абазинец<NOUN>
 абазинай<NOUN>:абазинка<NOUN>
 абазинал<NOUN>:абазины<NOUN>

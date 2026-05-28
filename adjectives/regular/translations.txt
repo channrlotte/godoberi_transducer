@@ -1,5 +1,3 @@
-
-LEXICON Translations
 аваданав<ADJ>:веселый<ADJ>
 авар<ADJ>:аварский<ADJ>
 аᵸвухабу<ADJ>:кипяченый<ADJ>
