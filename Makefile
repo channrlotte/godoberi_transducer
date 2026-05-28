@@ -48,7 +48,7 @@ nouns_lexicon.lexd: nouns/regular/common.txt nouns/exceptions/common.txt \
 	cat $+ > $@
 
 translations.lexd: translations.txt \
-				   adjectives/regular/translations.txt adjectives/exceptions/translations.txt
+				   adjectives/regular/translations.txt adjectives/exceptions/translations.txt \
 				   nouns/regular/translations.txt nouns/exceptions/translations.txt
 
 	cat $+ > $@
